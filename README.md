@@ -30,7 +30,7 @@ gulp.task('gtm', function(){
 
 ```
 
-The following code will be insterted directly after the opening body tag:
+The following code will replace the startTag and endTag. Or if `replace: false`, the code will be inserted between the startTag and endTag.
 ```html
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-1234"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

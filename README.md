@@ -5,7 +5,7 @@
 #### Install
 
 ```bash
-$ npm install gulp-gtm --save-dev
+$ npm install pos1tron/gulp-gtm --save-dev
 ```
 
 ## Example

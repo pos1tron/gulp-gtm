@@ -10,7 +10,7 @@ $ npm install gulp-gtm --save-dev
 
 ## Example
 
-Make sure to enter the correct containerId, startTag, and endTag.
+Make sure to enter the correct containerId, startTag, and endTag. Set `replace: false` if you do not wish to replace the startTag and endTag.
 
 ```js
 var gulp = require('gulp');
@@ -22,7 +22,8 @@ gulp.task('gtm', function(){
 	.pipe(gtm({
 		containerId: 'GTM-1234'
 		startTag: '<!-- Google Tag Manager -->', // default
-		endTag: '<!-- End Google Tag Manager -->' // default
+		endTag: '<!-- End Google Tag Manager -->', // default
+		replace: true // default
 	}))
 	.pipe(gulp.dest('./'));
 });

@@ -28,7 +28,6 @@ module.exports = function(opts) {
       var replaceChars = opts.replace ? (endIndex + opts.endTag.length) - startIndex : endIndex - (startIndex + opts.startTag.length);
       content = content.slice(0, sliceAt) + gtm + content.slice(sliceAt + Math.abs(replaceChars));
     }
-    console.log(content);
     file.contents = new Buffer(content);
     cb(null, file);
   })
